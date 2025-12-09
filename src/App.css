@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+}
+poster-container h3{
+  font-weight: 500;
+  color: #000;
+}
+.poster-container .line-1{
+  font-weight: 500;
+  color: #000;
+  font-size: 1.2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.poster-container .line-3{
+  font-weight: 450;
+  color: #000;
+  font-size: 1.1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.category-text{
+  font-weight: 400;
+}
+
+.deal-box{
+  border: 1px solid #dee2e6;
+}
+
+.section-gap {
+  margin-top: 100px;  
+}
+.services{
+  cursor: pointer;
+}
+
+.footer p, .footer li{
+  color: #d7d8d8;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.footer li:hover{
+  color: #7e7e7e;
+}
+
+.footer p:hover{
+  color:  #7e7e7e;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track {
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-slide {
+  scroll-snap-align: start;
+}
+.feeback-card, .category-card, .footer-bottom img{
+  cursor: pointer;
+}
+
+
+/* Default: Mobile = 1 card */
+:root {
+  --card-width: 100%;
+}
+
+/* Small screen (≥576px): 2 cards */
+@media (min-width: 576px) {
+  :root {
+    --card-width: 50%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Medium screen (≥768px): 3 cards */
+@media (min-width: 768px) {
+  :root {
+    --card-width: 33.33%;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+/* Large screen (≥1200px): 4 cards */
+@media (min-width: 1200px) {
+  :root {
+    --card-width: 25%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* Default: Mobile = 1 card */
+:root {
+  --testimonial-width: 100%;
+}
+
+/* Small (≥576px): 1.5 cards (nice partial preview) */
+@media (min-width: 576px) {
+  :root {
+    --testimonial-width: 66.66%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* Medium (≥768px): 2 cards */
+@media (min-width: 768px) {
+  :root {
+    --testimonial-width: 50%;
   }
+}
+
+/* Extra Large (≥1200px): 3 cards */
+@media (min-width: 1200px) {
+  :root {
+    --testimonial-width: 33.33%;
+  }
+}
+
+
+.catgeory-view-btn{
+  padding: 10px 50px;
+}
+
+/* Initially hidden */
+.hover-icons,
+.hover-cart {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover shows both */
+.seller-card:hover .hover-icons,
+.seller-card:hover .hover-cart {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Smooth fade for icons */
+.hover-icons {
+    transform: translateY(-15px);
+}
+
+/* Makes sure image wrapper behaves smoothly */
+.image-wrapper {
+    position: relative;
 }
