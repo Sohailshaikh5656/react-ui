@@ -31,8 +31,11 @@ The app will run on http://localhost:3000.
 <h2>📸 Screenshots</h2>
 All screenshots of the UI are available inside the /ScreenShot folder.
 <div align="center">
+<hr />
 <img src="./screenShot/s2.png" height="400" width="auto" />
+<hr />
 <img src="./screenShot/s1.png" height="400" width="auto"/>
+<hr />
 <img src="./screenShot/s3.png" height="400" width="auto"/>
 </div>
 <br />
