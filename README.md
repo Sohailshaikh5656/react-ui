@@ -7,18 +7,22 @@ This repository contains a React-based UI assignment. The project is built using
 Follow the steps below to run the project locally:
 <br />
 <h3>1. Clone the Repository</h3>
+
 ```bash
 git clone https://github.com/Sohailshaikh5656/react-ui.git
 ```
 <h3>2. Navigate to the Project Folder</h3>
+
 ```bash
 cd react-ui
 ```
 <h3>3. Install Dependencies</h3>
+
 ```bash
 npm install
 ```
 <h3>4. Start the Development Server</h3>
+
 ```bash
 npm start
 ```
